@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Password Generato</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Gerar senha</h1>
+  </div>
+  <div id="password_container">
+    <span id="password"></span>
+    <button id="copy"><i class="fa-regular fa-copy"></i></button>
+  </div>
+
+  <div id="password_items">
+    <div class="item">
+      <input type="size" name="size" type="number">
+      <label for="size">Quantidade de caracteres</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" name="include_uppercase" id="include_uppercase">
+      <label for="include_uppercase">
+        Incluir letra maiúscula
+      </label>
+    </div>
+    <div class="item">
+      <input type="checkbox" name="include_lowercase" id="include_lowercase">
+      <label for="include_lowercase">
+        Incluir letra minúscula
+      </label>
+     </div>
+     <div class="item">
+        <input type="checkbox" name="include_number" id="include_number">
+        <label for="include_number">
+          Incluir número
+        </label>
+     </div>
+     <div class="item">
+        <input type="checkbox" name="include_special_charactere" id="include_special_charactere">
+        <label for="include_special_charactere">
+          Incluir caractere escecial 
+        </label>
+
+        <button id="generate">Gerar senha</button>
+     </div>
+    
+
+  </div>
+  
+</body>
+</html>
