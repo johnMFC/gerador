@@ -23,10 +23,17 @@ return charTypes;
 
 function randownCharType(charTypes){
    const randomIndex = Math.floor(Math.random() * charTypes.length);
-   return randomIndex;
+   
+   return charTypes[randomIndex][Math.floor(Math.random() * charTypes[randomIndex].length)];
+}
+
+function getPasswordSize(){
+  const size = document.querySelector("#number").value;
+  return size;
 }
 
   document.querySelector("#generate").addEventListener("click", function() {
-     console.log(randownCharType(getCharTypes()));
+     //console.log(randownCharType(getCharTypes()));
+     console.log(getPasswordSize());
   });
 
