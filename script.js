@@ -3,6 +3,7 @@ function getCharTypes() {
   const lowerCase = document.getElementById("include_lowercase").checked;
   const numbers = document.getElementById("include_number").checked;
   const specialCharacters = document.getElementById("include_special_charactere").checked;
+  
   const charTypes = [];
    
 if (upperCase) {
@@ -68,7 +69,7 @@ function message(text,background){
         return;
      }
      const passwordGenerated = generatePassword(size, charTypes);
-     
+
      document.querySelector("#password_container").classList.add("show");
      document.querySelector("#password").textContent = passwordGenerated;
   });
